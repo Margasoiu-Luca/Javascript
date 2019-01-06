@@ -80,4 +80,4 @@ var myfunc = function(ev){
 //se creaza event-handler pentru butonul Add
 Add.addEventListener('click',myfunc)
 
-input_box.addEventListener('keyup',myfunc)
+//input_box.addEventListener('keyup',myfunc)

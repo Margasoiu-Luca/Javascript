@@ -1,5 +1,5 @@
 
-#Projects for Javascript Course 2018
+# Projects for Javascript Course 2018
 
 [Step It Academy, Bucharest](https://itstep.ro)
 Trainer: @Dragos Dehelean

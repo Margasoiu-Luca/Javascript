@@ -14,7 +14,9 @@ var input_box=document.querySelector('input')
 
 // functia care introduce elementele in prima lista
 var myfunc = function(ev){
-    alert(ev.target.key)
+    // daca se da click pe butonul 'Add' sau pe enter, se va executa continutul functiei
+    if(typeof ev.key === 'undefined'||ev.key==='Enter'){
+        
     var temp_li=document.createElement('li')
     // id-ul este generat dinamic si va contribui la remove
     temp_li.id=id_buton
@@ -75,9 +77,9 @@ var myfunc = function(ev){
     })  
 
 
-    lista_initiala.appendChild(temp_li)
+    lista_initiala.appendChild(temp_li)}
 }
-//se creaza event-handler pentru butonul Add
+// se creaza event-handler pentru butonul Add
 Add.addEventListener('click',myfunc)
 
-//input_box.addEventListener('keyup',myfunc)
+input_box.addEventListener('keyup',myfunc)

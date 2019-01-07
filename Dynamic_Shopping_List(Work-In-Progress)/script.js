@@ -16,7 +16,7 @@ var input_box=document.querySelector('input')
 var myfunc = function(ev){
     // daca se da click pe butonul 'Add' sau pe enter, se va executa continutul functiei
     if(typeof ev.key === 'undefined'||ev.key==='Enter'){
-        
+
     var temp_li=document.createElement('li')
     // id-ul este generat dinamic si va contribui la remove
     temp_li.id=id_buton
@@ -38,13 +38,29 @@ var myfunc = function(ev){
     temp_buton1.className='buton_lista mx-2'
     temp_buton1.innerText='Edit';
     temp_li.appendChild(temp_buton1)
-    temp_buton1.addEventListener('click',function(){
-        
+    temp_buton1.addEventListener('click',function(ev){
+        //gasteste al catelea element este cel apasat
+        var list=Array.from(document.getElementsByClassName('remove_buton'))
+        var index
+        index = list.findIndex(x=>
+            x.parentElement.id===this.parentElement.id)
+        var y =document.createElement('input')
+        y.value=list[index].parentElement.firstElementChild.innerText
+        list[index].parentElement.firstElementChild.innerText=''
+        list[index].parentElement.insertBefore(y,list[index].parentElement.firstElementChild)
     })
 
 
     finalize_function= function(ev){
         var x = ev.target.parentElement
+        //partea acastea se ocupa daca a fost dat pe edit si dupa pe finalize
+
+
+
+
+
+
+
         lista_finala.appendChild(x)
         x.removeChild(x.lastElementChild)
         x.removeChild(x.lastElementChild)

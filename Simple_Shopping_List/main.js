@@ -20,8 +20,12 @@ obj.addEventListener('click', function(){
     sp1.innerText=inputbox.value
     inputbox.value=''
 
+    sp1.classList.add('my-3') 
+    sp1.classList.add('mx-2')
+
     var sp2=document.createElement('span')
-    
+    sp2.classList.add('mx-2')
+
     var button=document.createElement('input')
 
     button.type='submit'
@@ -34,7 +38,8 @@ obj.addEventListener('click', function(){
 
     x.appendChild(sp2)
 
-    
+    x.style.marginBottom="10px"
+
     list.appendChild(x)
 
     itemArray=Array.from(document.getElementsByClassName('itemButton'))

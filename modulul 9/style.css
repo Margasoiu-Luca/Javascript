@@ -1,0 +1,14 @@
+.center {
+    display: block;
+    margin-left: 50%;
+}
+.header{
+    background-color:#007bff;
+    width:100%
+}
+#wrapper {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  

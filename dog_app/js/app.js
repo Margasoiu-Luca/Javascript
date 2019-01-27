@@ -110,6 +110,26 @@ card.addEventListener('click', function(){
 // PAS 9 - Transmiteti datele completate in formular printr-un request POST, catre https://jsonplaceholder.typicode.com/posts 
 // Printati in consola raspunsul primit de la server, impreuna cu un mesaj custom.  
 
+const buton=document.getElementById("submit")
+const nume=document.getElementById("name")
+const comentariu = document.getElementById("comment")
+
+buton.addEventListener("click",(ev)=>{
+    ev.preventDefault()
+
+    const obj = {
+        nume:nume.value,
+        comentariu:comentariu.value
+    }
+    fetch("https://jsonplaceholder.typicode.com/posts",{
+    method:"POST",
+    headers:{
+        "Content-Type": "aplication/json"
+    },
+    body:JSON.stringify(obj)})
+    .then(res=>res.json())
+    .then(data=>console.log(data))
+})
 
 // ------------------------------------------
 //  HELPER FUNCTIONS

@@ -4,7 +4,9 @@
 }
 .header{
     background-color:#007bff;
-    width:100%
+    width:100%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
 }
 #wrapper {
     align-content: center;

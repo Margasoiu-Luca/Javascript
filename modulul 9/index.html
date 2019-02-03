@@ -1,69 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  </head>
-  <body>
-      <div class="container">
-        <div class="jumbotron header jumbotron-fluid"><h1>Cat pictures as a Service! Everyday is Caturday</h1></div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-          <div class="row">
-              <div class = "col-4 mt-3" style="text-align:center">
-                    <select class="custom-select mb-3" >
-                          </select>
-                    <div class="border border-primary" style="border-radius:2%">
-                      <img class="img-fluid my-3 mx-3 center mx-auto" src="http://vignette1.wikia.nocookie.net/dynastywarriors/images/6/60/Link_-_HW.png/revision/latest?cb=20140526003852" >
-                    </div>
-                
-                    <button type="button" id="wrapper"class="btn btn-primary my-3">Schimba poza</button>
-                </div>
-              
-              <div class = "col-8">
-                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-secondary active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Boxes
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option2" autocomplete="off"> Clothes
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option3" autocomplete="off"> hats
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option4" autocomplete="off"> Sinks
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option5" autocomplete="off"> Space
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option6" autocomplete="off"> Sunglasses
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option7" autocomplete="off"> ties
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option8" autocomplete="off"> Radio
-                </label>
-              </div></div>
-              
-              <div class = "col-4"></div>
-              
-            </div>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron header jumbotron-fluid">
+      <h1>Cat pictures as a Service! Everyday is Caturday</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-4 mt-3" style="text-align:center">
+        <select class="custom-select mb-3">
+        </select>
+        <div class="border border-primary" style="border-radius:2%">
+          <img class="img-fluid my-3 mx-3 center mx-auto" title="Placeholder" src="http://vignette1.wikia.nocookie.net/dynastywarriors/images/6/60/Link_-_HW.png/revision/latest?cb=20140526003852">
         </div>
-      <script src="main.js"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+        <button type="button" id="wrapper" class="btn btn-primary my-3">Schimba poza</button>
+      </div>
+
+      <div class="col-8 mx-auto center my-3 mx-3">
+        <div class="row d-flex justify-content-center">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="0" autocomplete="off" checked> None
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="5" autocomplete="off" checked> Boxes
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="15" autocomplete="off"> Clothes
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="1" autocomplete="off"> hats
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="14" autocomplete="off"> Sinks
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="2" autocomplete="off"> Space
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="4" autocomplete="off"> Sunglasses
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="7" autocomplete="off"> Ties
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="8" autocomplete="off"> Clear
+            </label>
+          </div>
+          <button type="button" class="btn btn-primary ml-3" id="secondary_search">Search</button>
+        </div>
+        <input placeholder="breed search" class='mt-3'> 
+        <div class="row mt-3 ml-3">
+          <div class="border border-primary col " style="border-radius:2%"><img class="img-fluid my-3 mx-3 center mx-auto poza_secundara"
+              title="Placeholder" src="http://vignette1.wikia.nocookie.net/dynastywarriors/images/6/60/Link_-_HW.png/revision/latest?cb=20140526003852" /></div>
+          <div class="border border-primary col ml-3" style="border-radius:2%"><img class="img-fluid my-3 mx-3 center mx-auto poza_secundara"
+              title="Placeholder" src="http://vignette1.wikia.nocookie.net/dynastywarriors/images/6/60/Link_-_HW.png/revision/latest?cb=20140526003852" /></div>
+        </div>
+        <div class="row mt-3 ml-3">
+          <div class="border border-primary col " style="border-radius:2%"><img class="img-fluid my-3 mx-3 center mx-auto poza_secundara"
+              title="Placeholder" src="http://vignette1.wikia.nocookie.net/dynastywarriors/images/6/60/Link_-_HW.png/revision/latest?cb=20140526003852" /></div>
+          <div class="border border-primary col ml-3" style="border-radius:2%"><img class="img-fluid my-3 mx-3 center mx-auto poza_secundara"
+              title="Placeholder" src="http://vignette1.wikia.nocookie.net/dynastywarriors/images/6/60/Link_-_HW.png/revision/latest?cb=20140526003852" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4"></div>
+
+  </div>
+  </div>
+  <script src="main.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

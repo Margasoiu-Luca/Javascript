@@ -60,10 +60,23 @@ select.addEventListener('change', (ev) => {
 })
 
 
+//introducerea imaginilor dupa categorie cand se schimba aceasta
+document.getElementById('secondary_search').addEventListener('click', (ev) => {
+    var x = document.querySelectorAll('.poza_secundara')
+    x.forEach(el=>{
+        fetch('https://api.thecatapi.com/v1/images/search?category_ids=' + document.querySelector('.active').firstElementChild.id, login)
+            .then(res => res.json())
+            .then(data => el.src=data[0].url)
+        }
+    )
+})
+
+
+
 var y = Array.from(document.querySelectorAll('.btn-secondary'))
 y.forEach(el => el.addEventListener('click', checkBtnSecondary))
 
-function checkBtnSecondary(ev){
-    console.dir(ev.target)
-    ev.target.classList.add('clicked-once')
+function checkBtnSecondary(ev) {
+    console.dir(ev.target.classList)
+
 }

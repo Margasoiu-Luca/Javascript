@@ -97,7 +97,7 @@ inputBox.addEventListener('keyup', (ev) => {
         var filteredBreeds = total_breeds.filter(item => item.name.toLowerCase().indexOf(inputBox.value.toLowerCase()) !== -1) 
         //dupa acea se va face un map care va schimba arrayul de pisici intr-un aray de promise
         filteredBreeds.map(item => fetch(`https://api.thecatapi.com/v1/images/search?breed_ids=${item.id}`, login).then(res => res.json()))
-        console.dir(filteredBreeds)
+
         Promise.all(filteredBreeds)
             .then(data => console.dir(data))
     }
